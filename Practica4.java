@@ -6,6 +6,10 @@ public class Practica4 {
         for(String valores:args){
             l.add(Integer.parseInt(valores));
         }
+        if (l.size() != 4){
+            System.out.println("Muchos o pocos valores");
+            return;
+        }
         Punto punto1 = new Punto(l.get(0),l.get(1));
         Punto punto2 = new Punto(l.get(2),l.get(3));
         Double distancia = Math.sqrt(Math.pow(l.get(2)-l.get(0), 2)+Math.pow(l.get(3)-l.get(1), 2));
